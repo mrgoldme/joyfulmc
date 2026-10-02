@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a879ff">
+  <title>✦ Joyful.MC ✦</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+  <div id="cursor-glow"></div>
+  <div class="background">
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+    <div id="floating-phrases"></div>
+  </div>
+
+  <header class="topbar glass">
+    <a class="brand" href="#" data-tab="home" aria-label="Joyful.MC — Главная">
+      <img class="brand-logo" src="joyful_logo.png" alt="Joyful.MC" />
+      <span class="brand-name">
+        <span class="brand-star">✦</span>
+        <span>Joyful<span class="dot">.</span>MC</span>
+        <span class="brand-star">✦</span>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <button class="nav-btn active" data-tab="home">Главная</button>
+      <button class="nav-btn" data-tab="links">Ссылки</button>
+      <button class="nav-btn" data-tab="about">✦</button>
+    </nav>
+
+    <div class="status">
+      <span class="status-dot"></span>
+      <span>онлайн-вибрация</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Главная -->
+    <section id="home" class="tab active">
+      <div class="hero">
+        <div class="hero-badge">MINECRAFT BEDROCK • FRIENDLY SERVER</div>
+        <h1>Добро пожаловать<br>в <span>✦ Joyful.MC ✦</span></h1>
+        <p class="hero-subtitle">
+          Место, где можно просто зайти в Minecraft, расслабиться,
+          построить что-нибудь красивое и провести время с друзьями.
+        </p>
+
+        <div class="ip-card glass tilt">
+          <div class="ip-label">IP-АДРЕС СЕРВЕРА</div>
+          <div class="ip-row">
+            <code id="server-ip">joyfulmc.serveminecraft.net</code>
+            <button id="copy-ip" class="copy-btn">
+              <span class="copy-icon">⧉</span>
+              <span>Скопировать</span>
+            </button>
+          </div>
+          <div class="version-note">
+            * Версия Minecraft BE: 26.52
+            <span>(Актуально на момент 02.10.26)</span>
+          </div>
+          <div id="copy-toast" class="copy-toast">IP скопирован ✦</div>
+        </div>
+      </div>
+
+      <div class="section-grid">
+        <article class="info-card glass tilt">
+          <div class="card-icon">☁</div>
+          <h2>Ламповая атмосфера</h2>
+          <p>
+            Joyful.MC создан не ради соревнований, конфликтов или выяснения,
+            кто тут самый главный. Это сервер для обычной игры, общения,
+            строительства и хорошего вайба.
+          </p>
+        </article>
+
+        <article class="info-card glass tilt">
+          <div class="card-icon">✦</div>
+          <h2>Просто играй</h2>
+          <p>
+            Зашёл, увидел друзей, построил дом, пошёл исследовать мир —
+            вот примерно такой уровень сложности. Никакой необходимости
+            превращать Minecraft в работу.
+          </p>
+        </article>
+
+        <article class="info-card glass tilt">
+          <div class="card-icon">♡</div>
+          <h2>Без лишних конфликтов</h2>
+          <p>
+            Здесь хочется сохранить спокойную атмосферу. Уважение,
+            дружелюбие и немного здорового безумия Minecraft — вполне
+            достаточный набор для хорошего сервера.
+          </p>
+        </article>
+      </div>
+
+      <div class="quote-panel glass">
+        <span class="quote-mark">“</span>
+        <p>Иногда лучший план на вечер — зайти в Minecraft и вообще никуда не спешить.</p>
+        <span class="quote-author">— философия Joyful.MC</span>
+      </div>
+    </section>
+
+    <!-- Ссылки -->
+    <section id="links" class="tab">
+      <div class="page-heading">
+        <div class="hero-badge">SOCIAL SPACE</div>
+        <h1>Наши <span>ссылки</span></h1>
+        <p>Здесь будут появляться места, где можно найти Joyful.MC.</p>
+      </div>
+
+      <div class="link-grid">
+        <a class="social-card glass tilt" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">
+          <div class="social-top">
+            <span class="social-logo">♪</span>
+            <span class="external">↗</span>
+          </div>
+          <h2>TikTok</h2>
+          <p>Тут должна быть ссылка на TikTok. Пока что тебя ждёт небольшой сюрприз.</p>
+          <span class="social-action">Открыть →</span>
+        </a>
+
+        <a class="social-card glass tilt" href="https://www.youtube.com/watch?v=o-YBDTqX_ZU" target="_blank" rel="noopener">
+          <div class="social-top">
+            <span class="social-logo">◈</span>
+            <span class="external">↗</span>
+          </div>
+          <h2>Discord</h2>
+          <p>Здесь позже можно поставить настоящую ссылку на Discord-сервер.</p>
+          <span class="social-action">Открыть →</span>
+        </a>
+
+        <div class="social-card glass tilt placeholder-card">
+          <div class="social-top">
+            <span class="social-logo">+</span>
+          </div>
+          <h2>Ещё что-нибудь</h2>
+          <p>Свободное место для будущего проекта, канала или другой ссылки.</p>
+          <span class="social-action">Скоро</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- О проекте -->
+    <section id="about" class="tab">
+      <div class="page-heading">
+        <div class="hero-badge">ABOUT THE PROJECT</div>
+        <h1><span>✦</span> О Joyful.MC</h1>
+        <p>Небольшой инди-проект, который начался с простой идеи.</p>
+      </div>
+
+      <div class="about-card glass">
+        <div class="about-symbol">✦</div>
+        <div class="about-content">
+          <div class="about-row">
+            <span>Создатель и Владелец сервера</span>
+            <strong>MR GOLD</strong>
+          </div>
+          <div class="about-row">
+            <span>Дата создания сервера и сайта</span>
+            <strong>02.10.2026</strong>
+          </div>
+          <div class="about-divider"></div>
+          <p class="copyright">( c ) Joyfull MC ( 2026 - 2027 )</p>
+          <p class="tiny-note">* Не являемся коммерческой организацией, просто инди проект, если так можно выразиться.</p>
+        </div>
+      </div>
+
+      <div class="timeline glass">
+        <div class="timeline-item">
+          <span>01</span>
+          <div>
+            <h3>Идея</h3>
+            <p>Спонтанная мысль сделать свой уютный сервер.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span>02</span>
+          <div>
+            <h3>Joyful.MC</h3>
+            <p>Идея получила имя, адрес и собственный маленький мир.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span>03</span>
+          <div>
+            <h3>А дальше — посмотрим</h3>
+            <p>Сайт, сервер и всё остальное могут постепенно меняться вместе с проектом.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>✦ Joyful.MC ✦</span>
+    <span>made with a little bit of chaos & a lot of friendship</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
